@@ -75,7 +75,7 @@ export class NoComunesComponent implements OnInit {
   ]
 
   //Async Pipe
-  miObservable = interval(5000).pipe(tap(() => console.log('interval'))); //1,2,3,4,5,6,7,8 Literalmente es un intervalo que va mostrando numeros cada segundo
+  miObservable = interval(5000).pipe(tap(() => console.log('interval'))); //1,2,3,4,5,6,7,8 Literalmente es un intervalo que va mostrando numeros cada 5 segundo
 
   valorPromesa = new Promise((resolve, reject) => {
     setTimeout(() => {
